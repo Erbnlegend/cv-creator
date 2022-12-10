@@ -46,7 +46,6 @@ class App extends Component {
     })
 
     this.setState({
-      ...this.state[location],
       [location]: result
     })
   }
@@ -55,7 +54,6 @@ class App extends Component {
     const filterArray = this.state[location].filter(item => item !== input)
 
     this.setState({
-      ...this.state[location],
       [location]: filterArray
     })
   }
