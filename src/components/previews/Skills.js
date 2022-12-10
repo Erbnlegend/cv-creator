@@ -1,10 +1,18 @@
 import React from 'react'
+import EditSkillsItem from '../edit/EditSkillsItem'
 
 export default function Skills (props) {
   const { skills } = props.cv
 
   const skillMap = skills.map((skill, index) => {
-    return <div className='info skill' onClick={props.edit} key={index} id={index}>{skill.skill}</div>
+    return (
+        <EditSkillsItem
+        key={index}
+        skill={skill}
+        edit={props.edit}
+        remove={props.remove}
+        />
+    )
   })
 
   return (

@@ -36,7 +36,7 @@ class App extends Component {
     this.handleChange = this.handleChange.bind(this)
     this.handleSubmit = this.handleSubmit.bind(this)
     this.edit = this.edit.bind(this)
-    this.delete = this.delete.bind(this)
+    this.remove = this.remove.bind(this)
   }
 
   edit = (input, location) => {
@@ -51,8 +51,15 @@ class App extends Component {
     })
   }
 
-  delete = (location, index) => {
-    console.log(this.state[location][index])
+  remove = (input, location) => {
+    const index = input.id - 1
+
+    const filterArray = this.state[location].filter(item => item !== input)
+
+    this.setState({
+      ...this.state[location],
+      [location]: filterArray
+    })
   }
 
   handleChange = (e) => {
@@ -77,7 +84,6 @@ class App extends Component {
   }
 
   render () {
-    console.log(this.state)
     return (
       <div>
         <Header />
@@ -90,7 +96,7 @@ class App extends Component {
           <CompletedData
             cv={this.state}
             edit={this.edit}
-            delete={this.delete}
+            remove={this.remove}
           />
         </div>
       </div>

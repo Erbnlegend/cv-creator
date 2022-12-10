@@ -1,4 +1,3 @@
-/* eslint-disable object-shorthand */
 import React from 'react'
 
 export default function EditEducation (props) {
@@ -24,11 +23,11 @@ export default function EditEducation (props) {
 
   const [input, setInput] = React.useState(
     {
-      id: id,
-      school: school,
-      study: study,
-      gpa: gpa,
-      gradDate: gradDate
+      id,
+      school,
+      study,
+      gpa,
+      gradDate
     }
   )
 
@@ -63,7 +62,7 @@ export default function EditEducation (props) {
           <label htmlFor='study'>Degree</label>
           <input
             type='text'
-            name='stud'
+            name='study'
             value={input.study}
             onChange={storeInput}
           />

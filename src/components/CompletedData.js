@@ -17,7 +17,7 @@ export default function CompletedData (props) {
           <Skills
             cv={props.cv}
             edit={props.edit}
-            delete={props.delete}
+            remove={props.remove}
           />
         </div>
       </div>
@@ -32,7 +32,7 @@ export default function CompletedData (props) {
           <Experience
             cv={props.cv}
             edit={props.edit}
-            delete={props.delete}
+            remove={props.remove}
           />
         </div>
         <div className='education-container'>
@@ -40,7 +40,7 @@ export default function CompletedData (props) {
           <Education
             cv={props.cv}
             edit={props.edit}
-            delete={props.delete}
+            remove={props.remove}
           />
         </div>
       </div>
