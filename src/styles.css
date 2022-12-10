@@ -1,0 +1,196 @@
+body {
+  margin: 0;
+  background-color: rgb(219, 218, 216);
+}
+
+.header {
+  background-color: rgba(17, 17, 37, 0.877);
+  margin: 0;
+  padding: 25px;
+  color: white;
+  box-shadow: 0 0 15px #000;
+}
+
+.container {
+  display: flex;
+}
+
+h2, h1 {
+  margin: 0;
+}
+
+input, textarea {
+  border: none;
+  border-radius: 3px;
+  display: flex;
+  width: 90%;
+  flex-direction: column;
+  font-size: 1.2rem;
+  resize: vertical;
+}
+
+label {
+  font-size: .7rem;
+}
+
+.form, .completed {
+  background-color: rgb(221, 221, 221);
+  position: relative;
+  width: 45%;
+  margin: 0 auto;
+  box-shadow: 0 0 15px #000;
+  height: 70vh;
+  overflow-y: auto;
+}
+
+.form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(100px, 1fr));
+  border-radius: 8px;
+  margin-top: 50px;
+  padding: 15px;
+}
+ .form button {
+  text-transform: uppercase;
+  background-color: rgba(79, 104, 216, 0.822);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: bolder;
+  width: 92%;
+  margin: 10px auto;
+  padding: 5px;
+}
+
+button:hover {
+  box-shadow: 1px 0 1px #000;
+  background-color: rgba(79, 104, 216, 0.922);
+}
+
+.education, .skill, .experiences {
+  border: 2px solid rgba(0, 0, 0, 0);
+}
+
+.education:hover, .skill:hover, .experiences:hover {
+  border: 2px solid rgba(0, 0, 0, 0.541);
+}
+
+/* Preview Styles */
+
+.completed {
+  display: flex;
+  border: 1px solid rgba(15, 23, 39, 0.61);
+  margin-top: 50px;
+  max-width: 1000px;
+  min-width: 400px;
+  height: auto;
+}
+
+.preview-container {
+  width: 65%;
+  padding: 15px;
+  font-size: .8rem;
+}
+.preview-container h3 {
+  margin: 10px 0 0 0;
+  font-size: 1rem;
+  border-bottom: 1px solid rgb(85, 85, 85);
+}
+
+.preview-container h4 {
+  font-size: .8rem;
+  margin: 5px 0;
+}
+
+.contact-container {
+  position: relative;
+  height: 100%;
+  min-width: 200px;
+  width: 25%;
+}
+
+.skills-container h3, .contact-container h3 {
+  background-color: rgb(38, 41, 49);
+  font-size: .8rem;
+  margin: 10px 0;
+  padding: 10px;
+}
+
+.skills-container h2, .contact-container h2 {
+  font-size: .8rem;
+  padding: 5px;
+}
+
+.education, .experiences {
+  position: relative;
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+
+/* Make dates float to left of info */
+.flexDate {
+  display: flex;
+  flex-direction: column;
+}
+.flexInfo {
+  margin-left: 15px;
+}
+
+.company {
+  font-weight: bold;
+  font-style: italic;
+}
+.contact {
+  background-color: rgb(56, 61, 71);
+  box-shadow: 1px 1px 1px #000;
+  color: white;
+}
+
+.info {
+  font-size: .8rem;
+  padding-left: 5px;
+}
+
+.name {
+  padding-top: 20px;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.description {
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.addMission {
+  grid-column: span 2;
+}
+.addMission textarea {
+  min-height: 125px;
+  padding-right: 40px;
+}
+
+/* Options Buttons */
+.options {
+  position: absolute;
+  display: flex;
+  left: 85%;
+  top: 0;
+}
+
+.options .delete, .options .edit {
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 5px;
+  margin-left: 3px;
+}
+
+.options .delete {
+  background-color: rgba(187, 35, 35, 0.74);
+}
+.options .edit {
+  background-color: rgba(79, 104, 216, 0.822);
+}
