@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 export default function AddContact (props) {
   const { contact } = props.cv
@@ -50,4 +51,9 @@ export default function AddContact (props) {
       </form>
     </div>
   )
+}
+
+AddContact.propTypes = {
+  cv: PropTypes.object,
+  handleChange: PropTypes.func
 }

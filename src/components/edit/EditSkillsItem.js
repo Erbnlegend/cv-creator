@@ -1,5 +1,6 @@
 import React from 'react'
 import EditSkills from '../edit/EditSkills'
+import PropTypes from 'prop-types'
 
 export default function EditSkillsItem (props) {
   const { skill, edit, remove } = props
@@ -33,4 +34,10 @@ export default function EditSkillsItem (props) {
           }
         </div>
   )
+}
+
+EditSkillsItem.propTypes = {
+  skill: PropTypes.object,
+  edit: PropTypes.func,
+  remove: PropTypes.func
 }

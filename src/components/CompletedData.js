@@ -5,6 +5,8 @@ import Experience from './previews/Experience'
 import Skills from './previews/Skills'
 import Mission from './previews/Mission'
 
+import PropTypes from 'prop-types'
+
 export default function CompletedData (props) {
   return (
     <div className='completed'>
@@ -46,4 +48,10 @@ export default function CompletedData (props) {
       </div>
     </div>
   )
+}
+
+CompletedData.propTypes = {
+  cv: PropTypes.object,
+  edit: PropTypes.func,
+  remove: PropTypes.func
 }

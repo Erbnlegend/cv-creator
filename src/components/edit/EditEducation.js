@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 export default function EditEducation (props) {
   const { id, school, study, gpa, gradDate } = props.education
@@ -80,4 +81,10 @@ export default function EditEducation (props) {
       </div>
     </div>
   )
+}
+
+EditEducation.propTypes = {
+  edit: PropTypes.func,
+  education: PropTypes.object,
+  toggle: PropTypes.func
 }

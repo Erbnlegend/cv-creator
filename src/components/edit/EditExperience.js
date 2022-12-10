@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 export default function EditExperience (props) {
   const { id, company, position, tasks, dateFrom, dateTo } = props.experiences
@@ -90,4 +91,10 @@ export default function EditExperience (props) {
       </div>
     </div>
   )
+}
+
+EditExperience.propTypes = {
+  experiences: PropTypes.object,
+  edit: PropTypes.func,
+  toggle: PropTypes.func
 }

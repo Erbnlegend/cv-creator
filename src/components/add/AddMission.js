@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 export default function AddMission (props) {
   const { mission } = props.cv
@@ -18,4 +19,9 @@ export default function AddMission (props) {
       </form>
     </div>
   )
+}
+
+AddMission.propTypes = {
+  cv: PropTypes.object,
+  handleChange: PropTypes.func
 }

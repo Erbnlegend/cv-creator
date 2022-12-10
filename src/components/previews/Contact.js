@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 export default function Contact (props) {
   const { contact } = props.cv
@@ -14,4 +15,8 @@ export default function Contact (props) {
       <div className='info'>{contact.email}</div>
     </div>
   )
+}
+
+Contact.propTypes = {
+  cv: PropTypes.object
 }

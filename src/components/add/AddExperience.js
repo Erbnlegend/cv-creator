@@ -1,6 +1,7 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
-export default function UpdateExperience (props) {
+export default function AddExperience (props) {
   const { experiences } = props.cv
 
   const ids = {
@@ -102,4 +103,9 @@ export default function UpdateExperience (props) {
       </form>
     </div>
   )
+}
+
+AddExperience.propTypes = {
+  cv: PropTypes.object,
+  submit: PropTypes.func
 }

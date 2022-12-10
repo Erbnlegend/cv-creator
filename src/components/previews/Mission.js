@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 export default function Mission (props) {
   const { mission } = props.cv
@@ -8,4 +9,8 @@ export default function Mission (props) {
       <div className='mission'>{mission.text}</div>
     </div>
   )
+}
+
+Mission.propTypes = {
+  cv: PropTypes.object
 }

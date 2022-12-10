@@ -52,8 +52,6 @@ class App extends Component {
   }
 
   remove = (input, location) => {
-    const index = input.id - 1
-
     const filterArray = this.state[location].filter(item => item !== input)
 
     this.setState({

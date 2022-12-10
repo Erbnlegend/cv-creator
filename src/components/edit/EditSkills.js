@@ -1,8 +1,8 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 export default function EditSkills (props) {
-  const { id, skill, edit, remove } = props.skill
-  console.log(skill)
+  const { id, skill } = props.skill
 
   function togglePreview () {
     // call app edit to change state
@@ -45,4 +45,10 @@ export default function EditSkills (props) {
       <button className='save-sm' onClick={togglePreview}>Save</button>
       </div>
   )
+}
+
+EditSkills.propTypes = {
+  skill: PropTypes.object,
+  edit: PropTypes.func,
+  toggle: PropTypes.func
 }

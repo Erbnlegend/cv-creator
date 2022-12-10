@@ -1,6 +1,7 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
-export default function UpdateEducation (props) {
+export default function AddEducation (props) {
   const { education } = props.cv
 
   const ids = {
@@ -89,4 +90,9 @@ export default function UpdateEducation (props) {
       </form>
     </div>
   )
+}
+
+AddEducation.propTypes = {
+  cv: PropTypes.object,
+  submit: PropTypes.func
 }

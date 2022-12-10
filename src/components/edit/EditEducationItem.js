@@ -1,5 +1,6 @@
 import React from 'react'
 import EditEducation from '../edit/EditEducation'
+import PropTypes from 'prop-types'
 
 export default function EditEducationItem (props) {
   const { school, edit, remove } = props
@@ -39,4 +40,10 @@ export default function EditEducationItem (props) {
           }
         </div>
   )
+}
+
+EditEducationItem.propTypes = {
+  school: PropTypes.object,
+  edit: PropTypes.func,
+  remove: PropTypes.func
 }

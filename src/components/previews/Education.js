@@ -1,5 +1,6 @@
 import React from 'react'
 import EditEducationItem from '../edit/EditEducationItem'
+import PropTypes from 'prop-types'
 
 export default function Education (props) {
   const { education } = props.cv
@@ -20,4 +21,10 @@ export default function Education (props) {
       { educationMap }
     </div>
   )
+}
+
+Education.propTypes = {
+  cv: PropTypes.object,
+  remove: PropTypes.func,
+  edit: PropTypes.func
 }

@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 export default function AddSkills (props) {
   const { skills } = props.cv
@@ -12,7 +13,7 @@ export default function AddSkills (props) {
 
   function submit (e) {
     e.preventDefault()
-    if (skill.value === '' || typeof skill.value === 'null') {
+    if (skill.value === '') {
       skill.placeholder = 'Must not be empty'
       return
     }
@@ -38,4 +39,9 @@ export default function AddSkills (props) {
       </form>
     </div>
   )
+}
+
+AddSkills.propTypes = {
+  cv: PropTypes.object,
+  submit: PropTypes.func
 }

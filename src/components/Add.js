@@ -5,6 +5,8 @@ import AddExperience from './add/AddExperience'
 import AddMission from './add/AddMission'
 import AddSkills from './add/AddSkills'
 
+import PropTypes from 'prop-types'
+
 export default function Add (props) {
   return (
     <div className='form'>
@@ -35,4 +37,10 @@ export default function Add (props) {
       />
     </div>
   )
+}
+
+Add.propTypes = {
+  cv: PropTypes.object,
+  handleChange: PropTypes.func,
+  submit: PropTypes.func
 }

@@ -1,5 +1,6 @@
 import React from 'react'
 import EditExperienceItem from '../edit/EditExperienceItem'
+import PropTypes from 'prop-types'
 
 export default function Experience (props) {
   const { experiences } = props.cv
@@ -20,4 +21,10 @@ export default function Experience (props) {
       { experienceMap }
     </div>
   )
+}
+
+Experience.propTypes = {
+  cv: PropTypes.object,
+  edit: PropTypes.func,
+  remove: PropTypes.func
 }
