@@ -1,7 +1,5 @@
-# cv-creator
+# cv-creator Made with ReactJS
 A simple form that creates your CV! 
-
-Made with ReactJS
 
 Step 1: npm i
 #
