@@ -46,7 +46,6 @@ label {
 .form {
   display: grid;
   grid-template-columns: repeat(2, minmax(100px, 1fr));
-  border-radius: 8px;
   margin-top: 50px;
   padding: 15px;
 }
@@ -73,8 +72,10 @@ button:hover {
 }
 
 .skill {
+  display: flex;
   position: relative;
   padding-left: 5px;
+  text-overflow: ellipsis;
 }
 
 .education:hover, .skill:hover, .experiences:hover {
@@ -114,6 +115,9 @@ button:hover {
   min-width: 200px;
   width: 25%;
 }
+.skill > div {
+  
+}
 
 .skills-container h3, .contact-container h3 {
   background-color: rgb(38, 41, 49);
@@ -134,7 +138,7 @@ button:hover {
   padding: 10px 0;
 }
 
-/* Make dates float to left of info */
+/* Make dates to left of info */
 .flexDate {
   display: flex;
   flex-direction: column;
@@ -179,10 +183,8 @@ button:hover {
 
 /* Options Buttons */
 .options {
-  position: absolute;
   display: flex;
-  left: 85%;
-  top: 0;
+  justify-content: space-between;
 }
 
 .options .delete, .options .edit {

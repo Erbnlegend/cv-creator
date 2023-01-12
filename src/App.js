@@ -84,6 +84,7 @@ class App extends Component {
       <div>
         <Header />
         <div className='container'>
+          <React.StrictMode>
           <Add
             cv={this.state}
             handleChange={this.handleChange}
@@ -94,6 +95,7 @@ class App extends Component {
             edit={this.edit}
             remove={this.remove}
           />
+          </React.StrictMode>
         </div>
       </div>
     )
